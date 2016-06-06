@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         stockTableScrollView.addView(newStockRow, arrayIndex);
     }
 
-    public View.OnClickListener enterStockButtonListener = new View.OnClickListener() {
+    public OnClickListener enterStockButtonListener = new OnClickListener() {
         @Override
         public void onClick(View v) {
 
@@ -151,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public View.OnClickListener deleteStockButtonListener = new View.OnClickListener(){
+    public OnClickListener deleteStockButtonListener = new OnClickListener(){
 
         @Override
         public void onClick(View v) {
@@ -164,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    public View.OnClickListener getStockActivityListener = new View.OnClickListener() {
+    public OnClickListener getStockActivityListener = new OnClickListener() {
 
         @Override
         public void onClick(View v) {
@@ -184,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    public View.OnClickListener getStockFromWebsiteListener = new View.OnClickListener(){
+    public OnClickListener getStockFromWebsiteListener = new OnClickListener(){
 
         @Override
         public void onClick(View v) {

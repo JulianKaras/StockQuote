@@ -196,7 +196,7 @@ public class StockInfoActivity extends Activity{
 
             NodeList nl = entry.getElementsByTagName(tagName);
 
-            if(nl != null && nl.getLength() < 0){
+            if(nl != null && nl.getLength() > 0){
 
                 Element element = (Element)nl.item(0);
 
